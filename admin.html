@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Admin — Emmaus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="mark"></span>Emmaus</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="submit.html">Share a Request</a></li>
+        <li><a href="wall.html">Prayer Wall</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+
+      <div id="admin-gate" class="admin-gate">
+        <div class="section-head" style="margin-bottom:24px;">
+          <p class="eyebrow">Admin</p>
+          <h2>Sign in to manage requests</h2>
+        </div>
+        <div class="form-card">
+          <form id="admin-login-form">
+            <div class="field">
+              <label for="admin-email">Email</label>
+              <input type="email" id="admin-email" required>
+            </div>
+            <div class="field">
+              <label for="admin-password">Password</label>
+              <input type="password" id="admin-password" required>
+            </div>
+            <p id="admin-error" style="color:#a1403a; font-size:0.85rem; margin-bottom:16px;"></p>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Sign in</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="admin-panel" class="hidden">
+        <div class="section-head" style="text-align:left; max-width:none; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+          <div>
+            <p class="eyebrow">Admin</p>
+            <h2 style="margin-bottom:0;">Manage prayer requests</h2>
+          </div>
+          <button id="admin-logout" class="btn btn-ghost">Sign out</button>
+        </div>
+        <p style="max-width:640px;">Edits and deletes here apply to the live prayer wall — changes appear for every visitor, everywhere, in real time.</p>
+        <div id="admin-list" style="margin-top:24px;"></div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>Emmaus — a place to bring what you carry</span>
+    <span><a href="about.html">Luke 24:13–35</a></span>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prayer Wall — Emmaus</title>
+<meta name="description" content="Browse prayer requests shared by the Emmaus community and mark that you're praying.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="mark"></span>Emmaus</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="submit.html">Share a Request</a></li>
+        <li><a href="wall.html" aria-current="page">Prayer Wall</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The prayer wall</p>
+        <h2>Requests from the community</h2>
+        <p>Tap "Praying" to let someone know they're not carrying it alone.</p>
+      </div>
+
+      <div class="filters" id="filter-bar">
+        <button class="filter-pill" data-category="All" aria-pressed="true">All</button>
+        <button class="filter-pill" data-category="Healing" aria-pressed="false">Healing</button>
+        <button class="filter-pill" data-category="Family" aria-pressed="false">Family</button>
+        <button class="filter-pill" data-category="Guidance" aria-pressed="false">Guidance</button>
+        <button class="filter-pill" data-category="Grief" aria-pressed="false">Grief</button>
+        <button class="filter-pill" data-category="Thanksgiving" aria-pressed="false">Thanksgiving</button>
+        <button class="filter-pill" data-category="Other" aria-pressed="false">Other</button>
+      </div>
+
+      <div class="card-grid" id="wall-grid"></div>
+
+      <div style="text-align:center; margin-top: 40px;">
+        <a href="submit.html" class="btn btn-primary">Share your own request</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>Emmaus — a place to bring what you carry</span>
+    <span><a href="about.html">Luke 24:13–35</a></span>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

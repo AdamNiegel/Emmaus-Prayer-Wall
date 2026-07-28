@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emmaus — A Place to Bring What You Carry</title>
+<meta name="description" content="Emmaus is a quiet place to share a prayer request and pray for others.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="mark"></span>Emmaus</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="submit.html">Share a Request</a></li>
+        <li><a href="wall.html">Prayer Wall</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Emmaus</p>
+      <h1>You don't have to carry it alone.</h1>
+      <p>Emmaus is a quiet place to put down what's heavy — share a prayer request, and let others walk it with you. No account, no crowd. Just people, praying for people.</p>
+      <div class="btn-row">
+        <a href="submit.html" class="btn btn-primary">Share a prayer request</a>
+        <a href="wall.html" class="btn btn-ghost">Visit the prayer wall</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>A simple walk, taken together</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Share what you carry</h3>
+          <p>Write your request in a few sentences — as much or as little as you're comfortable with. Share your name, or stay anonymous.</p>
+        </div>
+        <div class="step">
+          <h3>Others walk with you</h3>
+          <p>Your request appears on the prayer wall, where anyone can read it and mark that they're praying.</p>
+        </div>
+        <div class="step">
+          <h3>You're not alone</h3>
+          <p>Every prayer counted is a reminder — someone, somewhere, is carrying this with you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Recently shared</p>
+        <h2>From the prayer wall</h2>
+      </div>
+      <div class="card-grid" id="recent-preview"></div>
+      <div style="text-align:center; margin-top: 32px;">
+        <a href="wall.html" class="btn btn-ghost">See the whole wall</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>Emmaus — a place to bring what you carry</span>
+    <span><a href="about.html">Luke 24:13–35</a></span>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

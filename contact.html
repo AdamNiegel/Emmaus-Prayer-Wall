@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Emmaus</title>
+<meta name="description" content="Get in touch with the Emmaus team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="mark"></span>Emmaus</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="submit.html">Share a Request</a></li>
+        <li><a href="wall.html">Prayer Wall</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Get in touch</p>
+        <h2>We'd love to hear from you</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Reach us</h3>
+          <div class="detail">
+            <span class="label">Email</span>
+            <a href="mailto:hello@emmaus-prayer.example">hello@emmaus-prayer.example</a>
+          </div>
+          <div class="detail">
+            <span class="label">Response time</span>
+            <p style="margin:0;">We read every message, usually within a few days.</p>
+          </div>
+          <div class="detail">
+            <span class="label">For urgent needs</span>
+            <p style="margin:0;">If you're in crisis, please reach out to a local pastor, counselor, or crisis line directly — this site is a place for prayer, not emergency support.</p>
+          </div>
+        </div>
+
+        <form class="form-card" style="margin:0;">
+          <div class="field">
+            <label for="contact-name">Name</label>
+            <input type="text" id="contact-name" placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="contact-email">Email</label>
+            <input type="text" id="contact-email" placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="How can we help?"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary" style="width:100%;" onclick="alert('Thanks — this is a demo form for the site prototype.')">Send message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>Emmaus — a place to bring what you carry</span>
+    <span><a href="about.html">Luke 24:13–35</a></span>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

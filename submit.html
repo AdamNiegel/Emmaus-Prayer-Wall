@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Share a Prayer Request — Emmaus</title>
+<meta name="description" content="Share a prayer request with the Emmaus community.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><span class="mark"></span>Emmaus</a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="submit.html" aria-current="page">Share a Request</a></li>
+        <li><a href="wall.html">Prayer Wall</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Share a request</p>
+        <h2>What's on your heart?</h2>
+        <p>Write in your own words. Someone will read it, and pray.</p>
+      </div>
+
+      <div class="form-card">
+        <form id="prayer-form" novalidate>
+          <div class="field">
+            <label class="checkbox-row">
+              <input type="checkbox" id="anonymous">
+              Post this anonymously
+            </label>
+          </div>
+          <div class="field" id="name-field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" placeholder="e.g. Sarah">
+          </div>
+          <div class="field">
+            <label for="category">Category</label>
+            <select id="category">
+              <option>Healing</option>
+              <option>Family</option>
+              <option>Guidance</option>
+              <option>Grief</option>
+              <option>Thanksgiving</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="request">Your prayer request</label>
+            <textarea id="request" required placeholder="Share what you're carrying..."></textarea>
+            <p class="hint">Please avoid sharing private details about others without their consent. See our <a href="about.html">guidelines</a>.</p>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Share with the wall</button>
+        </form>
+
+        <div class="confirmation" id="confirmation">
+          <p class="eyebrow">Thank you</p>
+          <h3>Your request has been shared.</h3>
+          <p>It's now on the prayer wall, where others can pray with you.</p>
+          <a href="wall.html" class="btn btn-primary">View the prayer wall</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>Emmaus — a place to bring what you carry</span>
+    <span><a href="about.html">Luke 24:13–35</a></span>
+  </div>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="js/firebase-config.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
